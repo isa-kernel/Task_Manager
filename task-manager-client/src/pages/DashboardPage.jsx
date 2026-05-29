@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { getTasks, createTask, deleteTask, updateTask } from '../services/taskService';
-import '../app.css';
+import '../App.css';
 
 
 export default function DashboardPage() {
