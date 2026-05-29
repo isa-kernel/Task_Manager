@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+/* CENTERED PAGE */
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+/* FORMS */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* TASK CARD */
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  border: 1px solid #e5e7eb;
+}
+
+/* TASK LEFT SIDE */
+.task-info p {
+  margin: 4px 0;
+}
+
+/* TASK BUTTONS */
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+/* COMPLETE TASK */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* LOGOUT */
+.logout-btn {
+  margin-bottom: 20px;
+  background: #dc2626;
+}
+
+/* AUTH PAGES */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* STACK AUTH INPUTS */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  /* TASK CARD STACK ON MOBILE */
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  /* TASK BUTTONS WRAP UNDER TEXT */
+  .task-actions {
+     min-width: 90px;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  /* MAKE BUTTONS SMALLER ON MOBILE */
+  button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  /* INPUT FULL WIDTH */
+  form {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  /* AUTH PAGES SMALLER PADDING */
+  .auth-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+}
